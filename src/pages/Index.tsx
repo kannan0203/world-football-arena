@@ -1,16 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import PlayerCards from "@/components/PlayerCards";
+import TrophyCabinet from "@/components/TrophyCabinet";
+import StadiumShowcase from "@/components/StadiumShowcase";
+import RankingsTable from "@/components/RankingsTable";
+import MatchResults from "@/components/MatchResults";
+import FootballQuiz from "@/components/FootballQuiz";
+import GOATDebate from "@/components/GOATDebate";
+import MusicButton from "@/components/MusicButton";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
-  return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
-  );
-};
-
-const Index = PlaceholderIndex;
+const Index = () => (
+  <div className="min-h-screen bg-football-dark text-football-neon">
+    <Navbar />
+    <Hero />
+    <PlayerCards />
+    <TrophyCabinet />
+    <StadiumShowcase />
+    <RankingsTable />
+    <MatchResults />
+    <FootballQuiz />
+    <GOATDebate />
+    <MusicButton />
+    <footer className="py-8 text-center font-body text-football-neon/30 text-sm border-t border-football-neon/10">
+      © 2024 World Football Universe — The Beautiful Game
+    </footer>
+  </div>
+);
 
 export default Index;
